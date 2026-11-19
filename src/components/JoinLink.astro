@@ -1,0 +1,6 @@
+---
+import { CLUB } from '../data/club';
+interface Props { class?: string; id?: string; }
+const { class: className = 'button yellow', id } = Astro.props;
+---
+<a href={CLUB.whatsapp} class={className} id={id}><slot>Join the club</slot><span aria-hidden="true">↗</span></a>

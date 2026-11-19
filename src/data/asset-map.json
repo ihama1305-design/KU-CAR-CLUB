@@ -1,0 +1,166 @@
+{
+  "note": "Provisional P IDs assigned by actual filename sort; master asset-map and A27 logo were not supplied. Original filenames, dimensions and SHA256 retained here. No A-ID equivalence asserted.",
+  "assets": [
+    {
+      "id": "P01",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.07 AM (1).jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "f57ff5323e8f2f1c30a841844be7ed75282b4b878dba9d1f90b58c912c33515d"
+    },
+    {
+      "id": "P02",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.07 AM.jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "f1b41ed455facbd09ecdd3127d219747978175029247ec7f190f7fe7935b1e52"
+    },
+    {
+      "id": "P03",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.08 AM (1).jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "ea9081520bfaddfea79a124ca669d6c93279774048e531c965cbb7bc428f8a79"
+    },
+    {
+      "id": "P04",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.08 AM (2).jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "50e65d89528e8fe7da510e07edf51b64dfa92485b913ac0ca88374baaeec8647"
+    },
+    {
+      "id": "P05",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.08 AM.jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "cb2e9600fc16a8c3fe46f7976fbb18c4c3cc111b6fc6e366493ca485b20d7661"
+    },
+    {
+      "id": "P06",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.09 AM.jpeg",
+      "width": 1125,
+      "height": 1994,
+      "sha256": "baf26d9ff28bc5566759a83a851298c7a18633a0a9dcaffa99a42d33defaecfa"
+    },
+    {
+      "id": "P07",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.10 AM.jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "74b6ab8b09a172548ddc12707ed4cf478d6f97010976619be80075065439f7b1"
+    },
+    {
+      "id": "P08",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.11 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "de3a2c2e5684e2ef17f6391d70f72a691d8ddd3ff4750b4afadbb1f14fb545a3"
+    },
+    {
+      "id": "P09",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.12 AM.jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "58a3d301b82a0fd95450080d9a22277bbc20a5c84a0a3028f643d03b774012b9"
+    },
+    {
+      "id": "P10",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.14 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "f9c6bf7a2256d59615e2e91e5798da69287721fb96840783069a913e5ae90be8"
+    },
+    {
+      "id": "P11",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.15 AM.jpeg",
+      "width": 2868,
+      "height": 3379,
+      "sha256": "0af26db6c1b6cc6e431f495f2bd5cf805e3eaf89a550261077567252925853c5"
+    },
+    {
+      "id": "P12",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.16 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "0d7ce49ad567ef452c9eff523a3a9d8d9247b435fb9e0d64fc875e4c6189a249"
+    },
+    {
+      "id": "P13",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.17 AM.jpeg",
+      "width": 3024,
+      "height": 4032,
+      "sha256": "20ee6a5655d7353c13ba4bf1eaff6f9c255a1888cc32ca7a6689aa763cb19afb"
+    },
+    {
+      "id": "P14",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.18 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "b37c6fdb724e2dbf23c57d27a9ee4301545043624e0bcbad3fa2e290dd3688ef"
+    },
+    {
+      "id": "P15",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.19 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "f2a2f501a1ab9ba6cf3aff41e90f6773dd139c6a82e3a0dd255a28c6490b22ae"
+    },
+    {
+      "id": "P16",
+      "file": "WhatsApp Image 2026-11-19 at 2.39.20 AM.jpeg",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "37d33d0375a2b9f142c50d46c2c5a2bc3b9e52170467cbb2f969374c673488e9"
+    },
+    {
+      "id": "P17",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.32 AM (1).jpeg",
+      "width": 1080,
+      "height": 864,
+      "sha256": "7532c5eb58e1a84aebe09a7fab5435760b2e255a5640b1a5781106cf20a4cc90"
+    },
+    {
+      "id": "P18",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.32 AM (2).jpeg",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "9939d9fa29242ad16bc809237d5bf3bd1f442c0ea376df8501c7d369b7bad994"
+    },
+    {
+      "id": "P19",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.32 AM.jpeg",
+      "width": 1600,
+      "height": 1280,
+      "sha256": "3bf7c8eb5fed4358e85a7a8dcc64ea56cbba14a2e31722fc908c676b5f02ca59"
+    },
+    {
+      "id": "P20",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.33 AM (1).jpeg",
+      "width": 1080,
+      "height": 720,
+      "sha256": "3c513ecd34c646ac137cc09d761cc6360eefabf74bb7a5bbb2c77cf01ae883f0"
+    },
+    {
+      "id": "P21",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.33 AM (2).jpeg",
+      "width": 1080,
+      "height": 607,
+      "sha256": "09447827ef15bca0458414a64aeb848b2d5df34c88a29f631f9ed06113d86540"
+    },
+    {
+      "id": "P22",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.33 AM (3).jpeg",
+      "width": 1080,
+      "height": 864,
+      "sha256": "6a16882b75331c4eb57c83976ff1f0f3ed8926f0922ac41b7fea9c10b4db5f89"
+    },
+    {
+      "id": "P23",
+      "file": "WhatsApp Image 2026-11-19 at 9.20.33 AM.jpeg",
+      "width": 1080,
+      "height": 864,
+      "sha256": "e32cd6e7ac049d33daa71fe8ce44fb8c676525d74f1e6654e9e3d42b12fcd492"
+    }
+  ]
+}

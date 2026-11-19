@@ -1,0 +1,10 @@
+---
+import { url } from '../data/club';
+import JoinLink from './JoinLink.astro';
+---
+<section class="join-section" id="join" aria-labelledby="join-title">
+  <div class="wrap join-grid">
+    <div><p class="eyebrow">There’s a place for your passion</p><h2 id="join-title">Your people.<br/>Your next chapter.</h2><p>Keep the conversation going. Join the KU Car Club WhatsApp group and connect with people who speak your language.</p><JoinLink>Join on WhatsApp</JoinLink><a class="text-link qr-help" href={url('join/')}>Show join QR <span aria-hidden="true">↗</span></a></div>
+    <div class="qr-card"><div class="qr-card-top"><strong>KU CAR CLUB</strong><span class="live-dot" aria-hidden="true"></span></div><img src={url('qr/whatsapp.svg')} width="250" height="250" alt="Scan to open the KU Car Club WhatsApp invitation" loading="lazy"/><p>SCAN. CONNECT. YOU’RE IN.</p><JoinLink class="text-link">Open WhatsApp</JoinLink><a class="download" href={url('qr/whatsapp.png')} download>Download QR ↓</a></div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import '@fontsource/barlow-condensed/latin-600.css';
+import '@fontsource/barlow-condensed/latin-700.css';
+import '@fontsource/dm-sans/latin-400.css';
+import '@fontsource/dm-sans/latin-500.css';
+import headingFont from '@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2?url';
+import bodyFont from '@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2?url';
+import '../styles/global.css';
+import { CLUB, url } from '../data/club';
+import JoinLink from '../components/JoinLink.astro';
+interface Props { title?: string; description?: string; hero?: boolean; }
+const {title='A shared passion. A new connection.', description='KU Car Club. Learn, Experience, Connect. Explore our community, car-meet moments and photography, and join the conversation on WhatsApp.'}=Astro.props;
+const production=!!import.meta.env.SITE;
+const canonical=production?new URL(Astro.url.pathname,import.meta.env.SITE).href:undefined;
+const links=[['about/','About'],['events/','Events'],['gallery/','Gallery']];
+---
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>{Astro.props.hero && <link rel="preload" as="image" href={url('media/hero-poster.jpg')} fetchpriority="high"/>}<link rel="preload" as="font" type="font/woff2" href={headingFont} crossorigin/><link rel="preload" as="font" type="font/woff2" href={bodyFont} crossorigin/><noscript><style>@media(max-width:1151px){.site-header{padding-bottom:330px!important}.site-header nav{display:flex!important}.menu-toggle{display:none}}</style></noscript><meta name="theme-color" content="#191c1b"/><title>{title} | KU Car Club</title><meta name="description" content={description}/><meta name="robots" content={production?'index,follow':'noindex,nofollow'}/><link rel="icon" href={url('favicon.svg')} type="image/svg+xml"/>{canonical&&<link rel="canonical" href={canonical}/>}<meta property="og:title" content={`${title} | KU Car Club`}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:image" content={production?new URL(url('media/P17-800.jpg'),import.meta.env.SITE).href:url('media/P17-800.jpg')}/></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href={url()} aria-label="KU Car Club home"><span class="brand-ku">KU</span><span class="brand-caption">CAR CLUB<span>LEARN. EXPERIENCE. CONNECT.</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><span aria-hidden="true">☰</span></button><nav id="main-nav" aria-label="Main navigation">{links.map(([path,label])=><a class:list={['nav-link',{'active':Astro.url.pathname===url(path)}]} href={url(path)} aria-current={Astro.url.pathname===url(path)?'page':undefined}>{label}</a>)}<a class="nav-link social-nav" href={CLUB.instagram} aria-label="KU Car Club on Instagram">Instagram <span aria-hidden="true">↗</span></a><JoinLink class="button yellow header-join"/></nav></div></header>
+<main id="main"><slot/></main>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-wordmark" href={url()}>KU CAR CLUB<span>Learn, Experience, Connect.</span></a><div class="footer-links"><a href={url('about/')}>About</a><a href={url('events/')}>Events</a><a href={url('gallery/')}>Gallery</a><a href={CLUB.instagram}>Instagram ↗</a><a href={CLUB.whatsapp}>Join on WhatsApp ↗</a><a href={url('join/')}>Show join QR</a></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} KU Car Club</span><span>Driven by a shared passion.</span><a href="#main">Back to top ↑</a></div></div></footer>
+<JoinLink class="button yellow floating-join" id="floating-join">Join on WhatsApp</JoinLink>
+<script src="../scripts/site.ts"></script>
+</body></html>

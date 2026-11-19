@@ -1,0 +1,12 @@
+---
+import { url } from '../data/club';
+import { photo } from '../data/media';
+interface Props { id: string; class?: string; eager?: boolean; sizes?: string; }
+const { id, class: className, eager = false, sizes = '(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw' } = Astro.props;
+const m = photo(id);
+---
+<picture class={className}>
+  <source type="image/avif" srcset={[480,800,1280].filter(w=>w<=m.width).map(w=>`${url(`media/${id}-${w}.avif`)} ${w}w`).join(', ')} sizes={sizes}/>
+  <source type="image/webp" srcset={[480,800,1280].filter(w=>w<=m.width).map(w=>`${url(`media/${id}-${w}.webp`)} ${w}w`).join(', ')} sizes={sizes}/>
+  <img src={url(`media/${id}-800.jpg`)} width={m.width} height={m.height} alt={m.alt} loading={eager?'eager':'lazy'} decoding="async" />
+</picture>

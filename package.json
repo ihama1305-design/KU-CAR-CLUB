@@ -1,0 +1,45 @@
+{
+  "name": "ku-car-club",
+  "version": "1.0.0",
+  "description": "KU Car Club responsive static website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "test": "playwright test",
+    "verify:qr": "node scripts/verify-qr.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihama1305-design/KU-CAR-CLUB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ihama1305-design/KU-CAR-CLUB/issues"
+  },
+  "homepage": "https://github.com/ihama1305-design/KU-CAR-CLUB#readme",
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "astro": "^7.4.13",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.5"
+  },
+  "private": true,
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1",
+    "ffmpeg-static": "^5.3.0",
+    "jsqr": "^1.4.0",
+    "lighthouse": "^13.6.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^6.0.3"
+  }
+}
