@@ -1,0 +1,3 @@
+﻿import {test,expect} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+test('reduced motion and accessible landing',async({page})=>{await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');await page.locator('#explore').scrollIntoViewIfNeeded();await expect(page.locator('.uae-map')).toBeVisible();await page.locator('.location-list button').last().click();await expect(page.locator('#location-detail')).toContainText('Fujairah');const results=await new AxeBuilder({page}).analyze();expect(results.violations.filter(v=>v.impact==='critical'||v.impact==='serious')).toEqual([])});

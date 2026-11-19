@@ -91,3 +91,18 @@ npm test -- --project=chromium --workers=1
 ```
 
 Clear `BASE_PATH`, `BUILD_DIR`, `SITE_URL`, `TEST_URL` and `TEST_PATH` to return to defaults. This project does not modify the separate food website.
+
+## Single-page landing site (2026 redesign)
+
+Run `npm run dev -- --port 4322`, then open http://127.0.0.1:4322/.
+
+- All event, gallery branch/media, contributor, and location records: `src/data/landing.ts`.
+- Event `date`: use an ISO timestamp with UAE offset, e.g. `YYYY-MM-DDTHH:mm:ss+04:00`. Keep `null` until confirmed. Venue also stays `null` until confirmed. Display timezone is `Asia/Dubai`.
+- Local countdown preview: http://127.0.0.1:4322/?preview=countdown . This is explicitly marked as a preview and disabled on production hostnames.
+- Images and film: `public/media/`. Existing P IDs are documented in `src/data/asset-map.json`. Keep matching 480/800 WebP variants when replacing images. Videos load only when the modal opens.
+- Locations are exploration ideas, not confirmed event venues. The current location images are clearly labeled club mood references; replace them with destination photography when supplied.
+- Layout, styles, and interactions: `src/pages/index.astro`, `src/styles/landing.css`, `src/scripts/landing.ts`.
+- Map coastline and globe: Natural Earth public-domain geographic data, distributed by https://github.com/datasets/geo-countries . Simplified locally for small SVG output. Pins use WGS84 coordinates from the editable dataset.
+- Landing acceptance checks: `npm test -- tests/landing.spec.ts --project=chromium`. Prior multipage tests describe the previous design and are retained for those pages.
+
+Hero artwork is AI-generated editorial imagery, not documentation of a club event. The generated source was resized into `landing-hero-{600,1000,1600}.webp`. All other photographs and the club film reuse the supplied repository assets. Contributor labels are text because verified partner logo files were not supplied. A dedicated campus photograph can replace the first collage image when available.
